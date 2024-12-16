@@ -48,8 +48,8 @@ db = client[DATABASE_NAME]
 collection = db[COLLECTION_NAME]
  
 # Initialize Azure OpenAI client
-OPENAI_API_KEY = "f1d10e27aa074f40bd06661117fdf416"  # Azure OpenAI API Key
-OPENAI_ENDPOINT = "https://genai-openai-beyondhuman.openai.azure.com/"  # Azure OpenAI Endpoint
+OPENAI_API_KEY = ""  # Azure OpenAI API Key
+OPENAI_ENDPOINT = ""  # Azure OpenAI Endpoint
 openai_client = OpenAIClient(endpoint=OPENAI_ENDPOINT, credential=AzureKeyCredential(OPENAI_API_KEY))
  
 def generate_unique_key_value():
